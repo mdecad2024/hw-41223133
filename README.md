@@ -1,7 +1,5 @@
 # cad2024 電腦輔助設計與實習作業網站
 
-template 網站: https://mde.tw/hw-41223133 
-
 使用者: 41223133
 
 作業網站: https://mdecad2024.github.io/hw-41223133
