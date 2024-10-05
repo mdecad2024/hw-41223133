@@ -15,6 +15,12 @@
 <p>個人倉儲: <a href="https://github.com/mdecad2024/hw-41223133">https://github.com/mdecad2024/hw-41223133</a></p>
 <p>個人網站: <a href="https://mdecad2024.github.io/hw-41223133/" rel="nofollow">https://mdecad2024.github.io/hw-41223133/</a></p>
 <p>其他資訊:  記得每節課攜帶耳機、隨身碟以利上課。</p>
+<h1>openssl</h1>
+<p>2024/10/5</p>
+<p>今天我自己嘗試使用cmd來自己跟ChatGPT討論要怎麼建置openssl的問題，過程中我發現原來建立自己的key可以防範其他人如果要駭進我的帳號時，openssl就是我的金鑰可以擋掉駭客入侵，但不能防止所有駭客。</p>
+<p>建立openssl的目的是「自簽證明書」。這意味著我的證書是由我自己簽署的，而不是通過受信任的證書授權機構來簽發。這樣做在開發和測試環境中完全沒有問題，但在生產環境中，使用自簽名證書的網站通常會被瀏覽器標記為不安全，因為它們沒有經過可信的機構驗證。</p>
+<p>後來金鑰生成完成後，我自己再把生成成功的金鑰放進Github SSH裡面，這樣就完成我金鑰的儲存了。</p>
+<p><br/><br/><br/><br/><img alt="" height="344" src="/images/螢幕擷取畫面 2024-10-05 113834.png" width="800"/></p>
 <h1>Attendance</h1>
 <p>出席 (10%) - 自行舉證評分</p>
 <p>自行利用 Github commits 提交記錄評分.</p>
@@ -37,7 +43,7 @@
 <hr/>
 <p>利用 Solvespace 繪製列表中零件的操作過程與說明影片如下:</p>
 <p style="padding-left: 30px;">影片標題: 國立虎尾科技大學機械設計工程系電腦輔助設計與實習- 作業一之一</p>
-<p style="padding-left: 30px;">所完成的零件檔案下載</p>
+<p style="padding-left: 30px;">所完成的零件檔案下載:<a href="/downloads/untitled.html">點擊這裡</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MPLphpBQdos?si=4EimZvKRtxIBpIgW" title="YouTube video player" width="560"></iframe></p>
 <p style="padding-left: 30px;">截圖圖片:</p>
 <p style="padding-left: 30px;"><img alt="" height="450" src="/images/solvespace1-1作業.jpg" width="800"/></p>
