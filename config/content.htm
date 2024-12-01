@@ -237,8 +237,9 @@ var viewer3d;
         reader.readAsDataURL(f);
     }
     function openByGet(){
-        var url = "https://s104.cycu.org/~41223133/41223133_part3.stl";
-                      "https://s104.cycu.org/~41223133/41223133_part5.stl";
+        var url = "https://s104.cycu.org/~41223133/41223133_part3.stl" ,
+                     "https://s104.cycu.org/~41223133/41223133_part5.stl",
+    ];
         var opt = getOptions();
         opt.SceneUrl = url;
         readSTLfile(opt);
