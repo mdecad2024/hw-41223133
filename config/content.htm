@@ -171,7 +171,7 @@ openByGet();
 <p style="padding-left: 30px;">......</p>
 <p style="padding-left: 30px;"></p>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
+<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas><canvas height="300" id="cv3" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -227,11 +227,13 @@ function openByUrl(){
     // 可以添加更多的 STL URL
     readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
     readSTLfile(opt, 'cv2'); // 第二個 canvas
+    readSTLfile(opt, 'cv3');
 }
 
 function openByGet(){
     var urls = [
         "https://s104.cycu.org/~41223133/41223133_part3.stl",
+        "https://s104.cycu.org/~41223133/41223133_part4.stl",
         "https://s104.cycu.org/~41223133/41223133_part5.stl"
     ];
     var opt = getOptions();
@@ -242,8 +244,7 @@ function openByGet(){
 }
 
 openByGet();
-</script>
-<h2>w9</h2>
+</script><h2>w9</h2>
 <p>今天是期中，所以可能會對每個同學的倉儲進行打分數。 (2024.11.7 AM09:09)</p>
 <p>2024.11.9後續心得</p>
 <p>當天上完課後後續我主動去提問老師問題，發現自己有不懂的地方。像是當時我還不了解為甚麼我們上課時是學習使用solvespace來進行繪圖，業界的使用率是否很多?當天詢問過後才知道原來solvespace是比較小眾的群體才會使用它來進行繪圖，而且最重要的是它是屬於免費開源軟體(就跟python一模一樣)，我們所有人都可以自由使用它來編輯零組件。</p>
