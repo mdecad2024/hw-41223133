@@ -32,6 +32,9 @@
 <p>2024/12/01 下午 12:00 &lt;DIR&gt; .<br/>2024/10/24 上午 10:15 42,284 41223133_part2.stl<br/>2024/11/10 上午 10:47 37,884 41223133_part3.stl<br/>2024/11/24 下午 05:04 22,284 41223133_part4.stl<br/>2024/12/01 上午 11:37 9,984 41223133_part5.stl<br/> 4 個檔案 112,436 位元組<br/> 1 個目錄 86,694,780,928 位元組可用</p>
 <p>C:\tmp&gt;sftp 41223133@s104.cycu.org<br/>41223133@s104.cycu.org's password:<br/>Connected to s104.cycu.org.<br/>sftp&gt; pwd<br/>Remote working directory: /C:/Users/41223133.DESKTOP-BAEUNSD<br/>sftp&gt; cd ..<br/>sftp&gt; pwd<br/>Remote working directory: /C:/Users<br/>sftp&gt; cd 41223133<br/>sftp&gt; pwd<br/>Remote working directory: /C:/Users/41223133<br/>sftp&gt; dir<br/>public_html<br/>sftp&gt; cd public_html<br/>sftp&gt; dir<br/>41223133_part3.stl<br/>sftp&gt; put 41223133_part5.stl<br/>Uploading 41223133_part5.stl to /C:/Users/41223133/public_html/41223133_part5.stl<br/>41223133_part5.stl 100% 9984 162.5KB/s 00:00<br/>sftp&gt;</p>
 <p></p>
+<p><span style="background-color: #ffff00;"><span style="color: #000000;">sftp</span>影片嵌入範例:</span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/R0xUiCsF88I?si=rYBzPzPv6Pen8dQh" title="YouTube video player" width="560"></iframe></p>
+<p></p>
 <p></p>
 <p>網址路徑連結:<a href="https://mdecad2024.github.io/hw-41223133/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223133/41223133_part5.stl">https://mdecad2024.github.io/hw-41223133/cmsimde/static/viewstl.html?src=https://s104.cycu.org/~41223133/41223133_part5.stl</a></p>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
@@ -106,8 +109,7 @@ function openByGet(){
 }
 
 openByGet();
-</script>
-<h1>openssl</h1>
+</script><h1>openssl</h1>
 <p>2024/10/5</p>
 <p>今天我自己嘗試使用cmd來自己跟ChatGPT討論要怎麼建置openssl的問題，過程中我發現原來建立自己的key可以防範其他人如果要駭進我的帳號時，openssl就是我的金鑰可以擋掉駭客入侵，但不能防止所有駭客。</p>
 <p>建立openssl的目的是「自簽證明書」。這意味著我的證書是由我自己簽署的，而不是通過受信任的證書授權機構來簽發。這樣做在開發和測試環境中完全沒有問題，但在生產環境中，使用自簽名證書的網站通常會被瀏覽器標記為不安全，因為它們沒有經過可信的機構驗證。</p>
